@@ -5,6 +5,7 @@ import { z } from 'zod';
 import { Button } from "../../ui/button";
 import { Input } from "../../ui/input";
 import { Label } from "../../ui/label";
+import { Link } from "react-router-dom"
 
 const signIn = z.object({
   email: z.string().email()
@@ -40,6 +41,11 @@ export function SigniIn() {
         <title>Sign-in</title>
       </Helmet>
       <div className="p-8">
+        <Button variant="ghost" asChild className="absolute right-8 top-8 border-solid border-zinc-100 border-2 hover:text-rose-700 transition-colors ease-linear duration-200">
+          <Link to="/sign-up">
+            Novo estabelecimento
+          </Link>
+        </Button>
         <div className="w-[350px] flex flex-col gap-6 justify-center">
           <div className="flex flex-col gap-2 text-center">
             <h1 className="text-2xl font-semibold tracking-tight">Acessar Painel</h1>
