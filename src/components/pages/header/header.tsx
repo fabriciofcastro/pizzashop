@@ -1,5 +1,7 @@
 import { Home, Pizza, UtensilsCrossed } from "lucide-react";
+import { ThemeToggle } from "../../theme/themeToggle";
 import { Separator } from "../../ui/separator";
+import AccountMenu from "./account-menu";
 import { NavLink } from "./nav-link";
 
 export function Header() {
@@ -17,8 +19,15 @@ export function Header() {
           </NavLink>
           <NavLink to="/orders">
             <UtensilsCrossed className="h-4 w-4" />
+            Perdidos
           </NavLink>
         </nav>
+        <div className="ml-auto">
+          <ThemeToggle />
+        </div>
+        <div>
+          <AccountMenu />
+        </div>
       </div>
 
     </div>
