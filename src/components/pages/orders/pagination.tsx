@@ -28,12 +28,12 @@ export function Pagination({ pageIndex, totalCount, perPage }: PaginationProps) 
 
           <Button variant="outline" className="h-8 w-8 p-0">
             <span className="sr-only">Página anterior</span>
-            <ChevronRight className="h-4 w-4" />
+            <ChevronLeft className="h-4 w-4" />
           </Button>
 
           <Button variant="outline" className="h-8 w-8 p-0">
             <span className="sr-only">Próxima página</span>
-            <ChevronLeft className="h-4 w-4" />
+            <ChevronRight className="h-4 w-4" />
           </Button>
 
           <Button variant="outline" className="h-8 w-8 p-0">
